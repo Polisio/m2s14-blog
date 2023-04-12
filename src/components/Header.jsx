@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header(props) {
     return (
         <>
@@ -52,7 +54,7 @@ function Header(props) {
                             <a className="link-secondary" href="#">Subscribe</a>
                         </div>
                         <div className="col-4 text-center">
-                            <a className="blog-header-logo text-body-emphasis" href="#">{props.titulo}</a>
+                            <Link className="blog-header-logo text-body-emphasis" to={'/home'}>{props.titulo}</Link>
                         </div>
                         <div className="col-4 d-flex justify-content-end align-items-center">
                             <a className="link-secondary" href="#" aria-label="Search">
@@ -64,18 +66,18 @@ function Header(props) {
                 </header>
                 <div className="nav-scroller py-1 mb-2">
                     <nav className="nav d-flex justify-content-between">
-                        <a className="p-2 link-secondary" href="#">World</a>
-                        <a className="p-2 link-secondary" href="#">U.S.</a>
-                        <a className="p-2 link-secondary" href="#">Technology</a>
-                        <a className="p-2 link-secondary" href="#">Design</a>
-                        <a className="p-2 link-secondary" href="#">Culture</a>
-                        <a className="p-2 link-secondary" href="#">Business</a>
-                        <a className="p-2 link-secondary" href="#">Politics</a>
-                        <a className="p-2 link-secondary" href="#">Opinion</a>
-                        <a className="p-2 link-secondary" href="#">Science</a>
-                        <a className="p-2 link-secondary" href="#">Health</a>
-                        <a className="p-2 link-secondary" href="#">Style</a>
-                        <a className="p-2 link-secondary" href="#">Travel</a>
+                        <Link className="p-2 link-secondary" to={'/world'}>World</Link>
+                        <Link className="p-2 link-secondary" to={'/us'}>U.S.</Link>
+                        <a className="p-2 link-secondary" href="https:">Technology</a>
+                        <a className="p-2 link-secondary" href="https:">Design</a>
+                        <a className="p-2 link-secondary" href="https:">Culture</a>
+                        <a className="p-2 link-secondary" href="https:">Business</a>
+                        <a className="p-2 link-secondary" href="https:">Politics</a>
+                        <a className="p-2 link-secondary" href="https:">Opinion</a>
+                        <a className="p-2 link-secondary" href="https:">Science</a>
+                        <a className="p-2 link-secondary" href="https:">Health</a>
+                        <a className="p-2 link-secondary" href="https:">Style</a>
+                        <a className="p-2 link-secondary" href="https:">Travel</a>
                     </nav>
                 </div>
             </div>
